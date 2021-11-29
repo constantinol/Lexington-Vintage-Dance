@@ -1,0 +1,50 @@
+{% extends "home/base.html" %}
+
+<head>
+	<title> Lexington Vintage Dance </title>
+	<link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+{% block content %}
+
+<body><center>
+	<div class="main">
+		<h1> Come Dance! </h1>
+		<h2> Events for {{ month }} {{ year }} Lexington Vintage Dance </h2>
+		<h3>News and Upcoming Events</h3>
+		<center>{{ cal | safe }} </center> <!-- this is a filter that Django allows us to use so that the calendar apears normally -->
+
+		<p> The Lexington Vintage Dancers are always looking for new members. If you think you might 
+			like to join, please attend one of our dance classes and let the teacher know that you are 
+			interested in joining the troupe. The teacher can assess if you are ready for the level of 
+			dancing expected of troupe members or advise you to take more dance classes first. 
+			Potential members are also invited to attend a few troupe rehearsals as observers in order 
+			to meet the troupe members and see if they can work well in the rehearsal environment.
+			<br><br>
+			New troupe members must be approved by the troupe membership committee. We look for people 
+			with some dance background (not necessarily in vintage dance) and a friendly disposition who 
+			are willing to be team players. Learning our choreographies and dance styles and acquiring 
+			period attire takes time, so potential troupe members should be committed to staying in 
+			the Lexington area for several years. You need not join with a partner, but since we must 
+			maintain approximate gender balance in the troupe, we cannot always accept a single woman 
+			(or single man). Troupe members pay no fees and receive no compensation (other than travel 
+			reimbursements and free admission to some events).
+			<br><br>
+			The look of authentic period dress is an important part of our presentations. Dancers own 
+			their costumes, which are usually reproductions of period attire and must meet strict  troupe 
+			standards. Dancers pay for their own costumes---a ball gown can cost hundreds of dollars---but 
+			grants are often available to help troupe members with part of the expense.
+			<br><br>
+			Troupe members are enthusiastic about vintage dance, are eager to improve their dance skills, 
+			and have a desire to perform. Other avenues are open to those who are interested mainly in 
+			social dance and recreation.</p>
+	</div>
+	Copyright (c) {{ current_year }}
+
+<script>
+	
+</script></center>
+</body>
+
+
+{% endblock %}
